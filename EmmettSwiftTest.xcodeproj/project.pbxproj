@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		713DC721805E4EA0C4D63318 /* Pods_EmmettSwiftTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347554ECD34F5003A51E4F6F /* Pods_EmmettSwiftTest.framework */; };
 		A0693A3921F243D5008FAC40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0693A3821F243D5008FAC40 /* AppDelegate.swift */; };
 		A0693A3B21F243D5008FAC40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0693A3A21F243D5008FAC40 /* ViewController.swift */; };
 		A0693A3E21F243D5008FAC40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0693A3C21F243D5008FAC40 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2684EC30E7400B57558015B6 /* Pods-EmmettSwiftTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmmettSwiftTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EmmettSwiftTest/Pods-EmmettSwiftTest.debug.xcconfig"; sourceTree = "<group>"; };
+		2C5062F1188B36542DA8BD13 /* Pods-EmmettSwiftTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmmettSwiftTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-EmmettSwiftTest/Pods-EmmettSwiftTest.release.xcconfig"; sourceTree = "<group>"; };
+		347554ECD34F5003A51E4F6F /* Pods_EmmettSwiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmmettSwiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0693A3521F243D5008FAC40 /* EmmettSwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmmettSwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0693A3821F243D5008FAC40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0693A3A21F243D5008FAC40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				713DC721805E4EA0C4D63318 /* Pods_EmmettSwiftTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BF36E3518643AD28AB778C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				347554ECD34F5003A51E4F6F /* Pods_EmmettSwiftTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9DFD9D2F76875B000A9BB66D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2684EC30E7400B57558015B6 /* Pods-EmmettSwiftTest.debug.xcconfig */,
+				2C5062F1188B36542DA8BD13 /* Pods-EmmettSwiftTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A0693A2C21F243D5008FAC40 = {
 			isa = PBXGroup;
 			children = (
 				A0693A3721F243D5008FAC40 /* EmmettSwiftTest */,
 				A0693A3621F243D5008FAC40 /* Products */,
+				9DFD9D2F76875B000A9BB66D /* Pods */,
+				2BF36E3518643AD28AB778C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0693A4721F243D5008FAC40 /* Build configuration list for PBXNativeTarget "EmmettSwiftTest" */;
 			buildPhases = (
+				92D7A5F951254755F9AE8D67 /* [CP] Check Pods Manifest.lock */,
 				A0693A3121F243D5008FAC40 /* Sources */,
 				A0693A3221F243D5008FAC40 /* Frameworks */,
 				A0693A3321F243D5008FAC40 /* Resources */,
+				9185101B2DCDE5D8C6875C06 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9185101B2DCDE5D8C6875C06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EmmettSwiftTest/Pods-EmmettSwiftTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/EmmettSwiftKit/EmmettSwiftKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EmmettSwiftKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmmettSwiftTest/Pods-EmmettSwiftTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92D7A5F951254755F9AE8D67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EmmettSwiftTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A0693A3121F243D5008FAC40 /* Sources */ = {
@@ -280,6 +353,7 @@
 		};
 		A0693A4821F243D5008FAC40 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2684EC30E7400B57558015B6 /* Pods-EmmettSwiftTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +372,7 @@
 		};
 		A0693A4921F243D5008FAC40 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C5062F1188B36542DA8BD13 /* Pods-EmmettSwiftTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

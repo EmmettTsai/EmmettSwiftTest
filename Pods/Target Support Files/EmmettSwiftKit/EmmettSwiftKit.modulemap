@@ -1,0 +1,6 @@
+framework module EmmettSwiftKit {
+  umbrella header "EmmettSwiftKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - EmmettSwiftKit (1.0.0)
+
+DEPENDENCIES:
+  - EmmettSwiftKit
+
+SPEC REPOS:
+  https://github.com/EmmettTsai/EmmettPodSpecs.git:
+    - EmmettSwiftKit
+
+SPEC CHECKSUMS:
+  EmmettSwiftKit: bb2b7769ba6d22cad9b84137b727a1d98bcccd85
+
+PODFILE CHECKSUM: 77e2ba62de29d7d8aef980e6502b57b6ea6ce2bb
+
+COCOAPODS: 1.5.3
